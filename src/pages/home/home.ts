@@ -7,8 +7,12 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
+  username = "";
   constructor(public navCtrl: NavController) {
 
+  }
+  joinRoom(){
+    this.navCtrl.setRoot("ChatPage");
   }
 
 }
